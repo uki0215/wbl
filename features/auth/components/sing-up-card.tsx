@@ -47,9 +47,12 @@ export const SignUpCard = () => {
      Sign Up
     </CardTitle>
     <CardDescription>
-     If you are {""}
-     <Link href="/sign-in">
-      <span className="text-blue-500">Already registered</span>
+     By signing up you agree to our {""}
+     <Link href="">
+      <span className="text-blue-500"> Privacy Policy</span>
+     </Link> and
+     <Link href="">
+      <span className="text-blue-500"> Terms of Services.</span>
      </Link>
     </CardDescription>
    </CardHeader>
@@ -111,7 +114,7 @@ export const SignUpCard = () => {
      </form>
     </Form>
    </CardContent>
-   <div className="p-4">
+   <div className="p-1">
     <Separator />
    </div>
    <CardContent className="p-7 flex flex-col gap-y-4">
@@ -124,6 +127,17 @@ export const SignUpCard = () => {
      <FcGoogle className="mr-2 size-5" />
      Login with Google
     </Button>
+   </CardContent>
+   <div className="px-7">
+    <Separator />
+   </div>
+   <CardContent className="p-7 flex items-center justify-between">
+    <p>
+     Already have an account?
+     <Link href="/sign-in">
+      <span className="text-blue-700">&nbsp;Sign In</span>
+     </Link>
+    </p>
    </CardContent>
   </Card>
 
